@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["console","log","fetch","then","r","json"],"mappings":";AAAAA,QAAQC,IAAI,SACZC,MAAM,+CAA+CC,KAAMC,IAAKJ,QAAQC,IAAIG,EAAEC","file":"src.963d3749.js","sourceRoot":"../src","sourcesContent":["console.log('hello');\nfetch('https://restcountries.eu/rest/v2/name/eesti').then((r)=>{console.log(r.json);})\n"]}
