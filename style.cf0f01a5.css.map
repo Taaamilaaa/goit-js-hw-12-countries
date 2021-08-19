@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,WACE,qBAAwB,CACxB,SAAU,CACV,gBAAiB,CACjB,iBACF,CACA,IACE,aAAc,CACd,SACF","file":"style.cf0f01a5.css","sourceRoot":"../src","sourcesContent":[".container {\n  background-color: yellow;\n  width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n}\nimg {\n  display: block;\n  width: 50%;\n}\n"]}
