@@ -5,13 +5,15 @@ import { alert, info, success, error } from '/../node_modules/@pnotify/core/dist
 import '@pnotify/core/dist/BrightTheme.css';
 
 export default function fetchCountries(e) {
+  e.preventDefault()
   const name = e.target.value;
    
-  return fetch(`https://restcountries.eu/rest/v2/name/${name}`)
+   fetch(`https://restcountries.eu/rest/v2/name/${name}`)
     .then(response => response.json())
     .then(data => dataProcessing(data))
-    .catch(error => console.log(error))
-
+  .catch(er=>console.log(er))
 }
 
-
+// function error() {
+//     refs.markupContainer.innerHTML = 'Не могу найти страну с таким сочетанием символов';
+// }

@@ -7,25 +7,30 @@ import { refs } from '../js/refs';
 
 export function dataProcessing(dataArr) {
   const countOfCountries = dataArr.length;
-     refs.markupContainer.innerHTML = '';
+  refs.markupContainer.innerHTML = '';
 
- if (countOfCountries > 10) {
+  if (countOfCountries > 10) {
     alert({
       text: `Найдено ${countOfCountries} стран, подходящих по критерию. Уточните запрос!`,
     });
     return;
- } else if (countOfCountries > 2 && countOfCountries <= 10) {
-     console.log(countOfCountries);
-   
-    const markupEl = markup(dataArr);
-    refs.markupContainer.innerHTML = markupEl;
-    return;
+  } else if (countOfCountries > 2 && countOfCountries <= 10) {
+    markupList(dataArr);
   }
-//   refs.markupContainer.innerHTML = '';
+  markupElement(dataArr);
+}
 
-  refs.input.value = '';
-  const country = dataArr[0];
+
+function markupList(arr) {
+  const markupEl = markup(arr);  
+  refs.markupContainer.innerHTML = markupEl;
+  return;
+}
+
+
+function markupElement(arr) {
+  const country = arr[0];
   const mainMark = mainMarkup(country);
-    refs.markupContainer.innerHTML = mainMark;
-    return;
+  refs.markupContainer.innerHTML = mainMark;
+  return;
 }
