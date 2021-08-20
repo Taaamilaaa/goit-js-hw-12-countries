@@ -13,18 +13,22 @@ export function dataProcessing(dataArr) {
     info({
       text: `Найдено ${countOfCountries} стран, подходящих по критерию. Уточните запрос!`,
     });
-    return
+    return;
   } else if (countOfCountries > 2 && countOfCountries <= 10) {
     markupList(dataArr);
+    return;
   } else if (countOfCountries = null) {
     cleaner()
+    return;
   }
   markupElement(dataArr);
+  return;
 }
 
 function markupList(arr) {
   const markupEl = markup(arr);
   refs.markupContainer.innerHTML = markupEl;
+  return;
 }
 
 function markupElement(arr) {
@@ -36,5 +40,5 @@ function markupElement(arr) {
 
 function cleaner() {
     refs.markupContainer.innerHTML = '';
-
+  return;
 }
