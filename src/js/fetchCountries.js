@@ -14,6 +14,3 @@ export default function fetchCountries(e) {
   .catch(er=>console.log(er))
 }
 
-// function error() {
-//     refs.markupContainer.innerHTML = 'Не могу найти страну с таким сочетанием символов';
-// }

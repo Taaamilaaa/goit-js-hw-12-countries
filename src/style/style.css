@@ -28,11 +28,12 @@ h1 {
   text-align: center;
 }
 .list {
-  margin-right: 40px;
+  padding-right: 40px;
 }
 .list__item {
   padding-bottom: 20px;
 }
+
 .input {
   width: 70%;
   height: 40px;
