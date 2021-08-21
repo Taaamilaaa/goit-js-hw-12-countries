@@ -17,10 +17,8 @@ export function dataProcessing(dataArr) {
   } else if (countOfCountries > 2 && countOfCountries <= 10) {
     markupList(dataArr);
     return;
-  } else if (countOfCountries = null) {
-    cleaner()
-    return;
   }
+  
   markupElement(dataArr);
   return;
 }
