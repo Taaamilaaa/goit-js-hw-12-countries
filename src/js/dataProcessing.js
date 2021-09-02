@@ -17,8 +17,7 @@ export function dataProcessing(dataArr) {
   } else if (countOfCountries > 2 && countOfCountries <= 10) {
     markupList(dataArr);
     return;
-  }
-  
+  }  
   markupElement(dataArr);
   return;
 }
@@ -26,6 +25,7 @@ export function dataProcessing(dataArr) {
 function markupList(arr) {
   const markupEl = markup(arr);
   refs.markupContainer.innerHTML = markupEl;
+  
   return;
 }
 
@@ -33,10 +33,12 @@ function markupElement(arr) {
   const country = arr[0];
   const mainMark = mainMarkup(country);
   refs.markupContainer.innerHTML = mainMark;
+
   return;
 }
 
-function cleaner() {
-    refs.markupContainer.innerHTML = '';
+function cleaner(arr) {
+  refs.markupContainer.innerHTML = '';
+  
   return;
 }
